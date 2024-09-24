@@ -1,0 +1,6 @@
+west-commands:
+  - file: scripts/custom_command.py
+    commands:
+      - name: custom-flash
+        class: CustomFlashCommand
+        help: Add header and download firmware
