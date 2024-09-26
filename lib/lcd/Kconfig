@@ -1,0 +1,7 @@
+# Copyright (c) 2024, Frank
+# SPDX-License-Identifier: Apache-2.0
+
+config LCD
+	bool "Support extern lcd"
+	help
+	  This option enables the 'lcd' library

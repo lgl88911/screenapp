@@ -7,6 +7,10 @@
 		zephyr,display = &lcdif;
 	};
 
+	aliases {
+		lcd-spi = &lpspi3;
+	};
+
 	panel {
 		compatible = "rocktech,rk043fn02h-ct";
 		port {
@@ -73,6 +77,10 @@ touch_i2c: &lpi2c1 {
 		reg = <0x38>;
 		int-gpios = <&gpio1 11 GPIO_ACTIVE_LOW>;
 	};
+};
+
+&lpspi3 {
+    status = "okay";
 };
 
 &w25q128 {

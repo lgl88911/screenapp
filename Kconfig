@@ -1,4 +1,4 @@
-# Copyright (c) 202
+# Copyright (c) 2024, Frank
 # SPDX-License-Identifier: Apache-2.0
 #
 # This Kconfig file is picked by the Zephyr build system because it is defined
@@ -6,4 +6,4 @@
 # module options by going to Zephyr -> Modules in Kconfig.
 
 # rsource "drivers/Kconfig"
-# rsource "lib/Kconfig"
+rsource "lib/Kconfig"
