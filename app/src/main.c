@@ -17,6 +17,7 @@ int main(void)
 {
 	printk("Startup\r\n");
 	lcd_init();
+	lcd_test();
 	while (1) {
 		k_sleep(K_MSEC(100));
 	}

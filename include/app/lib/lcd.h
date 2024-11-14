@@ -9,4 +9,6 @@
 
 void lcd_init(void);
 
+int lcd_test(void);
+
 #endif /* _LCD_SET_H_ */

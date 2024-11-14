@@ -35,6 +35,11 @@
 		};
 	};
 
+	zephyr,user {
+        lcd_cs_gpios = <&gpio1 21 GPIO_ACTIVE_HIGH>;
+        lcd_rst_gpios = <&gpio1 24 GPIO_ACTIVE_HIGH>;
+    };
+
 };
 
 &lcdif {
@@ -81,6 +86,8 @@ touch_i2c: &lpi2c1 {
 
 &lpspi3 {
     status = "okay";
+	pinctrl-0 = <&pinmux_lpspi3>;
+	pinctrl-names = "default";
 };
 
 &w25q128 {
